@@ -1,0 +1,6 @@
+--
+-- ETNA
+--   JOUR 26 : EX 16
+--
+
+SELECT DATEDIFF(CURDATE(), "2016-11-23") AS 'nbJours';

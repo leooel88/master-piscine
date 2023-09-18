@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>My Portfolio</title>
+</head>
+<body>
+    <header class="header">
+        <h1 class="basic_h1">Léo Ressayre</h1>
+        <nav>
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html">Projects</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="form_div">
+            <form>
+                <fieldset>
+                    <legend>Personal informations</legend>
+
+                    <label>Civility</label>
+                    <div class="radio_div">
+                        <div class="radio_button_div">
+                            <input type="radio" id="female" name="civility" value="Female" checked required>
+                            <label for="female">Female</label>
+                        </div>
+                        <div class="radio_button_div">
+                            <input type="radio" id="male" name="civility" value="Male" required>
+                            <label for="male">Male</label>
+                        </div>
+                    </div>
+
+                    <label for="firstname">Firstname</label>
+                    <div>
+                        <input type="text" id="firstname" required>
+                    </div>
+
+                    <label for="lastname">Lastname</label>
+                    <div>
+                        <input type="text" id="lastname" required>
+                    </div>
+
+                    <label for="email">Email</label>
+                    <div>
+                        <input type="email" id="email" pattern=".+@globex\.com" size="30" required>
+                    </div>
+
+                    <label for="phone_number">Phone number</label>
+                    <div>
+                        <input type="number" required>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Message</legend>
+
+                    <label for="subject">Subject</label>
+                    <div>
+                        <select name="subject" id="subject">
+                            <option value="">--Please choose an option--</option>
+                            <option value="work_proposal">Work proposal</option>
+                            <option value="rendez_vous">Rendez-vous</option>
+                            <option value="personnal_message">Personnal message</option>
+                        </select>
+                    </div>
+
+                    <label for="current_date">Current date</label>
+                    <div>
+                        <input type="date" id="current_date" name="current_date" value="2021-11-08" min="2021-01-01" max="2022-01-01">
+                    </div>
+
+                    <label for="content">Content</label>
+                    <div>
+                        <textarea id="content" name="content" rows="5" cols="33">Type tour message...</textarea>
+                    </div>
+                </fieldset>
+                <input type="submit" value="Confirm form">
+            </form>
+        </div>
+    </main>
+</body>
+</html>
